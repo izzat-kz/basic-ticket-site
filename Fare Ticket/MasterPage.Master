@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Fare_Ticket.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: xx-large;
+            text-align: center;
+            color: #FFFFCC;
+        }
+        .auto-style2 {
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            color: #FFFAF0;
+        }
+        .auto-style4 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+        <div id="header" class="auto-style1">
+            <br />
+            <span class="auto-style2">Adenium Eco Park</span></div>
+        <div id="menu">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">HOME</asp:HyperLink>
+            </div>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+            </div>
+        <div>
+        </div>
+        <div id="footer" class="auto-style4">
+            <br />
+            <asp:Label ID="lblFooter" runat="server" CssClass="auto-style3" Text="Contact Us : +03 8000 8000"></asp:Label>
+            </div>
+       </div>
+    </form>
+</body>
+</html>
